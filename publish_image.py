@@ -8,7 +8,7 @@ def operator():
     rospy.init_node('operator', anonymous=True)
     pub = rospy.Publisher('image_data', Image, queue_size=10)
     # read image
-    filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lena.png')
+    filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pa.JPG')
     im = cv2.imread(filepath, cv2.IMREAD_COLOR)
     # make bridge
     bridge = CvBridge()
